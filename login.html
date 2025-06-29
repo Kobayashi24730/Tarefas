@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Login!</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="container">
+    <form id="login" class="form active">
+      <h1>Login</h1>
+      <input id="emailFormLog"type="email" placeholder="Your email">
+      <input id="passwordFormLog" type="password" placeholder="Your password">
+      <label class="loginbutton">Nao tem uma conta <button id="redregister" type="button" >registrar-se</button></label>
+      <button type="button" onclick="login()">Login</button>
+    </form>
+    
+    <form id="register" class="form">
+      <h1>Register</h1>
+      <input id="nameFormRed"type="text" placeholder="Your name">
+      <input id="emailFormRed"type="email" placeholder="Your email">
+      <input id="passwordFormRed" type="password" placeholder="Your password">
+      <label>Ja tenho uma conta <button type="button" id="redlogin">Logar</button></label>
+      <button type="button" onclick="cadastrar()">Register</button>
+    </form>
+  </div>
+  
+  <script src="toggle-button-login.js"></script>  
+  <script src="login.js"></script>  
+</body>
+</html>

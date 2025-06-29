@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <h1>Lista de Tarefas</h1>
+    <ul class="toggle-button">
+      <li><button id="loginform"><a href="#">Login</a></button></li>
+      <li><button id="AddNewTask" class="active">Nova tarefa</button></li>
+      <li><button id="searchTask">Pesquisar</button></li>
+    </ul>
+  </nav>
+  
+  <div class="div-username">
+    <h2 id="username" >Username</h2>
+    <p id="counter"></p>
+  </div>
+  
+  <section class="container"> 
+    <div id="FormnewTask" class="form active">
+      <h2>Adiconar tarefas</h2>
+      <input type="text" id="taskInput" placeholder="Digite uma tarefa..." />
+      <button onclick="addTask()">Adicionar Tarefa</button>
+    </div>
+    
+    <div id="FormTaskSearch"class="form ">
+      <h2>Busca tarefas</h2>
+      <input type="text" id="searchInput" placeholder="Busca tarefa..."/>
+      <div>
+        <button onclick="searchTasks()">busca Tarefa</button>
+        <button onclick="clearSearch()">Limpar Busca</button>
+      </div>
+    </div>
+    
+    <div class="tarefas">
+      <h2>Tarefas</h2>
+      <p id="NoResultsMessage" style="display:none; color:red;">Nenhuma tarefa encontrada</p>
+      <ul id="taskList">
+        <li class="complete">Teste manual</li>
+      </ul>
+    </div>
+  </section>
+ 
+  <script src="links.js"></script>
+  <script src="toggle-button-form.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+:root{
+  --nav: #3C3C3C;
+  --bg:  #7A7A7A;
+  --btn: #6a11cb;
+  --h1: #2575fc;
+}
+  
+*{
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--nav);
+  padding: 10px;
+}
+.nav li{
+  padding: 10px;
+  list-style-type: none;
+  text-decoration: none;
+}
+.nav h1{
+  color: var(--h1);
+  padding-left: 20px;
+}
+.div-username{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  background: var(--bg);
+}
+.container {
+  width: 100%;
+  background: var(--bg);
+  padding-top: 10px
+}
+.form{
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.form.active{
+  display: flex;
+}
+.form h2{
+  font-size: 25px;
+  
+}
+.form input {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  width: 70%;
+  margin: 8px 0;
+}
+.form button {
+  background: var(--btn);
+  padding: 10px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+.toggle-button{
+  display: flex;
+  justify-content: center;
+}
+.toggle-button a{
+  padding:10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  transition: background 0.3s;
+}
+.toggle-button button{
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  margin: 0 5px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+.toggle-button button.active, a.active{
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+}
+.tarefas{
+  height: 100%;
+  text-align: center;
+  padding: 8px;
+  margin-left: 10px;
+}
+.tarefas h2 {
+  
+}
+
+ul#taskList{
+list-style-type: none;
+margin-top: 20px;
+}
+
+#taskList li {
+background: #fff;
+margin-bottom: 10px;
+padding: 10px;
+border-radius: 6px;
+border: 1px solid #ddd;
+display: flex;
+justify-content: space-between;
+align-items: center;
+cursor: pointer;
+}
+.task-actions{
+  display: flex;
+  gap: 8px;
+}
+li.done {
+text-decoration: line-through;
+color: gray;
+}
+
+li button {
+background: transparent;
+border: none;
+font-size: 14px;
+cursor: pointer;
+}
+#taskList li.complete {
+  background-color: #d4f7d4;
+  border-left: 5px solid green;
+}
+
+#NoResultsMessage{
+  font-weight: bold;
+  margin-top: 10px;
+}
